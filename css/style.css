@@ -24,6 +24,10 @@ header {
     transform: scale(1.2);
 }
 
+.abrir-menu,.cerrar-menu{
+    display: none;
+}
+
 nav li {
     list-style-type: none;
     display:inline-block;
@@ -218,13 +222,13 @@ a{
 
 .producto-card{
     background: linear-gradient(to right,rgb(0 0 0 /.5), rgb(0 0 0 /.5)),url(/img/tionito-isologo-negativo.png);
-    height: 173vw;
+    height: 185vw;
     width: 99.9vw;
     background-size: contain;
 }
 
 .container{
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 .acercar{
@@ -267,30 +271,42 @@ overflow: hidden;
     margin: 12px;
 }
 
-@media(max-width:1400px){
+@media(max-width:1399px){
 
-    .row{
-        margin-left: 75px;
+    .abrir-menu, .cerrar-menu{
+        display: none;
     }
 
     .producto-card{
-        height: 230vw;
+        height: 285vw;
+    }
+
+    .row{
+        margin-left: 80px;
     }
     
 }
 
 @media(max-width:1200px){
 
-    .row{
-        margin-left: 145px;
+    .abrir-menu, .cerrar-menu{
+        display: none;
     }
-    
+
     .producto-card{
-        height: 290vw;
+        height: 420vw;
     }
+
+    .row{
+        margin-left: 140px;
+    } 
 }
 
 @media(max-width:1024px){
+
+    .abrir-menu, .cerrar-menu{
+        display: none;
+    }
 
     .texto-nosotros{
         font-size: 20px;
@@ -320,23 +336,31 @@ overflow: hidden;
     }
 
     .producto-card{
-        height: 420vw;
+        height: 440vw;
     }
+
 }
 
-@media(max-width:990px){
+@media(max-width:992px){
 
-    .row{
-        margin-left: 190px;
+    .abrir-menu, .cerrar-menu{
+        display: none;
     }
 
     .producto-card{
-        height: 675vw;
+        height: 525vw;
     }
     
+    .row{
+        margin-left:  20px;
+    }
 }
 
 @media(max-width:824px){
+
+    .abrir-menu, .cerrar-menu{
+        display: none;
+    }
 
     header {
         height: 150px;
@@ -427,18 +451,34 @@ overflow: hidden;
     }
 
     .producto-card{
-        height: 1100vw;
+        height: 570vw;
     }
 }
 
-@media(max-width:768px){
+@media (max-width:767px){
+
+    .abrir-menu, .cerrar-menu{
+        display: none;
+    }
 
     .row{
-        margin-left: 180px;
+        margin-left: 100px;
+    }
+
+    .container{
+        padding-top: 40px;
+    }
+
+    .producto-card{
+        height: 1300vw;
     }
 }
 
 @media(max-width:655px){
+
+    .abrir-menu, .cerrar-menu{
+        display: none;
+    }
 
     header {
         height: 135px;
@@ -523,9 +563,16 @@ overflow: hidden;
         height: 1000vw;
     }
     
+    .producto-card{
+        height: 1770vw;
+    }
 }
 
 @media(max-width:480px){
+
+    .abrir-menu, .cerrar-menu{
+        display: none;
+    }
 
     header {
         height: 120px;
@@ -581,33 +628,71 @@ overflow: hidden;
     }
 
     .producto-card{
-        height: 1950vw;
+        height: 2150vw;
     }
 
     .row{
         padding-left: 0;
         margin-right: 70px;
+        margin-left: 80px;
     }
     
+    .container{
+        padding-top: 30px;
+    }
 }
 
 @media(max-width:425px){
 
-    .row{
-        margin-left: 80px;
+    .intro {
+        width: 60%;
+        font-size: 15px;
+    }
+
+    .abrir-menu, .cerrar-menu{
+        display: block;
+    }
+
+    .nav-inicio{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: #94D4D6;
+        padding: 12px;
+        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 400ms ease-in-out;
+        transform: translateX(100%);
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%);
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 }
 
 @media(max-width:375px){
 
     .producto-card{
-        height: 2160vw;
+        height: 3050vw;
     }
 }
 
 @media(max-width:320px){
 
     .producto-card{
-        height: 3060vw;
+        height: 3050vw;
     }
 }
