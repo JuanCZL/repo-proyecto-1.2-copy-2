@@ -28,6 +28,7 @@ header {
     display: none;
 }
 
+
 nav li {
     list-style-type: none;
     display:inline-block;
@@ -653,24 +654,49 @@ overflow: hidden;
         display: block;
     }
 
+    .abrir-menu{
+        background-color:#1F2E53;
+        border:none;
+        margin-right: 20px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    
+    .abrir-menu:hover{
+        transform: scale(1.1);
+    }
+    
+    .cerrar-menu{
+        cursor: pointer;
+        transition: all 0.3s;
+        background-color:#E6E6E6;
+        border: none;
+        margin-right: 5px;
+    }
+    
+    .cerrar-menu:hover{
+        transform: scale(1.1);
+    }
+    
     .nav-inicio{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        position: absolute;
+        position: fixed;
         top: 0px;
         right: 0px;
         bottom: 0px;
-        background-color: #94D4D6;
+        background-color:#E6E6E6 ;
         padding: 12px;
         box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
         opacity: 0;
         visibility: hidden;
         transition: all 400ms ease-in-out;
         transform: translateX(100%);
+        z-index: 9999;
     }
 
-    .nav.visible{
+    .nav-inicio.visible{
         opacity: 1;
         visibility: visible;
         transform: translateX(0%);
@@ -681,6 +707,32 @@ overflow: hidden;
         flex-direction: column;
         align-items: flex-end;
     }
+
+    .firus{
+        height: 125vw;
+        flex-direction: column;
+    }
+
+    .firulais{
+        width: 180px;
+        height: 250px;
+        margin-bottom: 15px;
+    }
+    
+    .texto-nosotros{
+        width: 80%;
+        height: 50%;
+        font-size: 10px;
+    }
+    
+    .nosotros-parrafo{
+        margin-top: 25px;
+    }
+    
+    .nosotros{
+        margin: 20px;
+    }
+    
 }
 
 @media(max-width:375px){
@@ -688,11 +740,23 @@ overflow: hidden;
     .producto-card{
         height: 3050vw;
     }
+
+    .firus{
+        height: 160vw;
+    }
+
+    .texto-nosotros{
+        margin-top: 10px;
+    }
 }
 
 @media(max-width:320px){
 
     .producto-card{
         height: 3050vw;
+    }
+
+    .firus{
+        height: 190vw;
     }
 }
