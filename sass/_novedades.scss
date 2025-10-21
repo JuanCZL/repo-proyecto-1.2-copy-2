@@ -1,0 +1,40 @@
+.descripciones{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(to right,rgb(0 0 0 /.5), rgb(0 0 0 /.5)),url(/img/tionito-isologo-negativo.png);
+    min-height: auto;
+    width: 99.9vw;
+    background-size: contain;
+
+    .explicacion{
+        text-decoration: none;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px #202E53, 1px 1px 1px #94D4D6;
+        color:white;
+        margin-top: 150px;
+        margin-left: 50px;
+
+        .primavera, .unica, .capas, .pie, .carrot, .torre, .choco, .red, .cheese, .tira{
+            margin-bottom: 25px;
+            font-size: 40px;
+        }
+    }
+
+    .producto-imagen{
+        width: 450px;
+        height: 450px;
+        border: 5px solid #F4CF9F;
+        border-radius: 10%;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    } 
+}
+
+
+
+

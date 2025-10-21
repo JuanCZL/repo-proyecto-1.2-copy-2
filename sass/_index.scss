@@ -1,0 +1,26 @@
+main {
+    height: 220vh;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background: url(/img/juan-silvia1.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .intro {
+        color: #E6E6E6;
+        text-decoration: none;
+        text-align: center;
+        width: 60%;
+        font-family: sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px #202E53, 1px 1px 1px #94D4D6;
+    }
+}
+
+.lover, .p1{
+    margin-top: 20px;
+}

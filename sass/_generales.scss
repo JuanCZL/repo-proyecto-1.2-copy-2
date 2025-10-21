@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F2E53;
+    height: 180px;
+
+    nav li {
+        list-style-type: none;
+        display:inline-block;
+        align-items: center;
+        transition: all 0.3s;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+
+        a {
+            text-decoration:solid;
+            text-shadow: 1.6px 1.6px 1.6px #202E53, 1.6px 1.6px 1.6px #94D4D6;
+            color:#F4CF9F;
+            font-family: sans-serif;
+            font-style: normal;
+            font-size: 18px; 
+            font-weight: bold;
+            margin-right: 20px; 
+            transition: all 0.3s;
+
+            &:hover{
+                color:white;
+            }
+        }
+    }
+}
+
+.logo img{
+    cursor: pointer;
+    height: 150px;
+    margin-left: 30px;
+    transition: all 0.3s;
+
+    &:hover{
+    transform: scale(1.2);
+    }
+}
+
+.abrir-menu,.cerrar-menu{
+    display: none;
+}
+
+footer {
+    background-color: #1F2E53;
+
+    .container1{
+        display: flex;
+        justify-content: space-around;
+
+        .lista2{
+            .enlaces{
+                display: flex;
+                gap: 35px;
+                padding: 20px;
+
+                a{
+                    color: salmon;
+                    text-decoration: none;
+                    list-style-type: none;
+                    font-family: sans-serif;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .terminos{
+            display: flex;
+            margin-top: 20px;
+        
+            .copy{
+                font-size: 10px;
+                text-decoration: none;
+                color: salmon;
+                font-family: sans-serif;
+                margin-left: 25px;
+                margin-bottom: 5px;
+
+                .copyright{
+                    width: 10px;
+                }
+            }
+
+            .derechos{
+                font-size: 10px;
+                text-decoration: none;
+                color: salmon;
+                font-family: sans-serif;
+                margin-right: 10px;
+                margin-bottom: 5px;
+            }
+        }
+
+        
+        .iconitos{
+            display: flex;
+            margin-right: 25px;
+        
+            .icoface, .icoinsta, .icowhat{
+                margin-right: 20px;
+                margin-top: 8px;
+            }
+        }
+    } 
+}

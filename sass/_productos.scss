@@ -1,0 +1,50 @@
+.producto-card{
+    background: linear-gradient(to right,rgb(0 0 0 /.5), rgb(0 0 0 /.5)),url(/img/tionito-isologo-negativo.png);
+    height: 185vw;
+    width: 99.9vw;
+    background-size: contain;
+
+    .container{
+        padding-top: 60px;
+
+        .card{
+            margin-left: 10px;
+            margin-top: 15px;
+
+            .acercar{
+                overflow: hidden;
+
+                img{
+                    transition: all 1.5s;
+
+                    &:hover{
+                        transform: scale(1.3);
+                    }                  
+                }
+            }
+
+            .card-img-top{
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+.list-group-item{
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 13px; 
+    font-weight: bold;
+    color: #1F2E53;
+    margin: 8px;
+    cursor:pointer;
+    transition:background-color 0.2s ease-in-out;
+
+    &:hover{
+        background-color: #F4CF9F;
+    }
+}
+
+.btn{
+    margin: 12px;
+}

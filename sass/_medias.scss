@@ -1,0 +1,142 @@
+@media (max-width: 1399px) {
+    .producto-card { height: 285vw; }
+    .row { margin-left: 80px; }
+    main { height: 180vh; }
+}
+
+@media (max-width: 1200px) {
+    .producto-card { height: 420vw; }
+    .row { margin-left: 140px; }
+    main { height: 160vh; }
+}
+
+@media (max-width: 1024px) {
+    main { height: 150vh; }
+    main .intro { font-size: 25px; }
+    .producto-card { height: 440vw; }
+    .firus .texto-nosotros { font-size: 25px; width: 45%; height: 70%;}
+    .firulais { width: 400px; height: 600px; }
+    .descripciones { height: 560vw; }
+    .descripciones .explicacion { font-size: 25px; margin-left: 30px;}
+    .descripciones .explicacion .primavera, .descripciones .explicacion .unica, .descripciones .explicacion .capas, .descripciones .explicacion .pie, .descripciones .explicacion .carrot, .descripciones .explicacion .torre, .descripciones .explicacion .choco, .descripciones .explicacion .red, .descripciones .explicacion .cheese, .descripciones .explicacion .tira { font-size: 38px; }
+    .descripciones .producto-imagen { width: 300px; height: 350px; margin-top: 135px; }
+    .explicacion { font-size: 25px; margin-top: 100px; margin-left: 40px; }
+}
+
+@media (max-width: 992px) {
+    .producto-card { height: 525vw; }
+    .row { margin-left: 20px; }
+}
+
+@media (max-width: 824px) {
+    main .intro { font-size: 20px ;}
+    header { height: 150px; }
+    .logo img { height: 125px; margin-left: 30px; }
+    nav li a { font-size: 15px; margin-right: 15px; }
+    .intro { width: 65%; font-size: 25px; }
+    footer .container1 .lista2 .enlaces a { font-size: 12px; }
+    footer .container1 .lista2 .enlaces { gap: 30px; padding: 15px; }
+    a { font-size: 12px; }
+    .iconitos { margin-right: 20px; }
+    .icoface, .icoinsta, .icowhat { margin-right: 20px; margin-top: 8px; }
+    .copy { font-size: 10px; margin-left: 10px; margin-bottom: 3px; }
+    .derechos { font-size: 8px; margin-left: 15px; margin-right: 20px; }
+    .copyright { width: 8px; }
+    .terminos { margin-top: 10px; }
+    .firulais { width: 330px; height: 500px; }
+    .texto-nosotros { width: 40%; height: 60%; font-size: 15px; }
+    .descripciones { height: 600vw; }
+    .explicacion { font-size: 20px; margin-top: 80px; }
+    .primavera, .unica, .capas, .pie, .carrot, .torre, .choco, .red, .cheese, .tira { margin-bottom: 20px; font-size: 30px; }
+    .producto-card { height: 570vw; }
+}
+
+@media (max-width: 768px) {
+    .producto-card { height: 1300vw; }
+    .row { margin-left: 100px; }
+    .container { padding-top: 40px; }
+    .firus .texto-nosotros { font-size: 17px; }
+    .firulais { width: 300px; height: 450px; }
+    .descripciones { height: 740vw; }
+    .descripciones .explicacion { font-size: 18px; margin-left: 90px;}
+    .descripciones .explicacion .primavera, .descripciones .explicacion .unica, .descripciones .explicacion .capas, .descripciones .explicacion .pie, .descripciones .explicacion .carrot, .descripciones .explicacion .torre, .descripciones .explicacion .choco, .descripciones .explicacion .red, .descripciones .explicacion .cheese, .descripciones .explicacion .tira { font-size: 30px; }
+    .descripciones .producto-imagen { width: 180px; height: 270px; margin-top: 147px; margin-bottom: 5px;}
+    .explicacion { font-size: 25px; margin-top: 100px; margin-left: 40px; }
+}
+
+
+@media (max-width: 655px) {
+    header { height: 135px; }
+    .logo img { height: 115px; margin-left: 20px; }
+    nav li a { font-size: 10px; margin-right: 10px; }
+    .intro { width: 70%; font-size: 20px; }
+    .lover, .p1 { margin-top: 15px; }
+    .container1 { display: grid; justify-items: center; grid-template-columns: 1fr; }
+    .enlaces { gap: 10px; padding: 5px; }
+    a { font-size: 8px; }
+    .icoface, .icoinsta, .icowhat { margin-right: 5px; margin-top: 5px; }
+    .copy { font-size: 5px; margin-left: 5px; margin-bottom: 3px; }
+    .derechos { font-size: 6px; margin-left: 8px; margin-right: 10px; }
+    .copyright { width: 5px; }
+    .terminos { margin-top: 6px; }
+    .iconitos { margin-left: 10px; margin-bottom: 20px; }
+    .firulais { width: 300px; height: 450px; }
+    .texto-nosotros { font-size: 13px; }
+    .descripciones { grid-template-columns: 1fr; height: 1000vw; }
+    .producto-card { height: 1770vw; }
+}
+
+@media (max-width: 480px) {
+    header { height: 120px; }
+    .logo img { height: 100px; margin-left: 15px; }
+    nav li a { font-size: 6px; margin-right: 8px; }
+    .texto-nosotros { width: 40%; height: 50%; font-size: 8px; margin-left: 10px; }
+    .nosotros { margin-bottom: 10px; }
+    .nosotros-parrafo { margin-top: 15px; margin-right: 10px; }
+    .producto-imagen { width: 250px; height: 250px; margin-top: 40px; margin-bottom: 110px; }
+    .explicacion { font-size: 15px; margin-top: 40px; margin-left: 25px; }
+    .descripciones { grid-template-columns: 1fr; height: 1420vw; }
+    .primavera, .unica, .capas, .pie, .carrot, .torre, .choco, .red, .cheese, .tira { margin-bottom: 25px; font-size: 30px; }
+    .producto-card { height: 2150vw; }
+    .row { padding-left: 0; margin-left: 80px; margin-right: 70px; }
+    .container { padding-top: 30px; }
+}
+
+@media (max-width: 425px) { 
+    main { height: 80vh; } 
+    main .intro { width: 60%; font-size: 10px; } 
+    .abrir-menu, .cerrar-menu { display: block; } 
+    .abrir-menu { background-color: #1F2E53; border: none; margin-right: 20px; cursor: pointer; transition: all 0.3s; &:hover { transform: scale(1.1); } } 
+    .cerrar-menu { background-color: #E6E6E6; border: none; margin-right: 5px; cursor: pointer; transition: all 0.3s; &:hover { transform: scale(1.1); } } 
+    .nav-inicio { all: unset; display: flex !important; flex-direction: column !important; align-items: flex-end !important; position: fixed !important; top: 0; right: 0; bottom: 0; background-color: #E6E6E6; padding: 15px; box-shadow: 0 0 0 100vmax rgba(0,0,0,.5); opacity: 0; visibility: hidden; transition: all 400ms ease-in-out; transform: translateX(100%); z-index: 9999; width: 150px; } 
+    .nav-inicio.visible { opacity: 1 !important; visibility: visible !important; transform: translateX(0%) !important; } 
+    .nav-list {all: unset; display: flex !important; flex-direction: column !important; align-items: flex-end !important; gap: 8px !important; margin: 0 !important; padding: 0 !important; } 
+    footer .container1 { display: flex; justify-content: space-around; flex-direction: column; align-items: center;} 
+    footer .container1 .iconitos { margin-right: 1px;} 
+    .firus { height: 125vw; flex-direction: column; } 
+    .firus .texto-nosotros { font-size: 10px; width: 70%; height: 65%;} 
+    .firulais { width: 200px; height: 250px; margin-bottom: 30px; margin-top: 20px;} 
+    .firus .texto-nosotros .nosotros-parrafo { margin-top: 15px; margin-right: 0px;} 
+    .firus .texto-nosotros .nosotros { margin-bottom: 15px; margin-top: 10px; } 
+    .descripciones { height: 1782vw;} 
+    .descripciones .explicacion { font-size: 20px; margin: 45px;} 
+    .descripciones .producto-imagen { margin-top: 15px; width: 220px;} }
+
+@media (max-width: 375px) {
+    .producto-card { height: 3050vw; }
+    .firus { height: 160vw; }
+    .texto-nosotros { margin-top: 10px; }
+    .descripciones { height: 1888vw; }
+    .descripciones .producto-imagen { width: 170px;height: 255px;}
+}
+
+@media (max-width: 320px) {
+    main { height: 70vh;}
+    main .intro { font-size: 8px ; width: 65%;}
+    footer .container1 .lista2 .enlaces { gap: 20px; padding: 12px; }
+    footer .container1 .terminos { margin-top: 8px;}
+    footer .container1 .terminos .copy { margin-left: 14px;}
+    .producto-card { height: 3050vw; }
+    .firus { height: 190vw; }
+    .descripciones { height: 2400vw; }
+}
