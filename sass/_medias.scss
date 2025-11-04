@@ -8,6 +8,7 @@
 }
 
 @media (max-width: 1024px) {
+    main {height: 1250px; width: auto;}
     main .intro { font-size: 25px; }
     .firus .texto-nosotros { font-size: 25px; width: 45%; height: 70%;}
     .firulais { width: 400px; height: 600px; }
@@ -43,6 +44,7 @@
 }
 
 @media (max-width: 768px) {
+    main {height: 1000px; width: auto;}
     .row { margin-left: 100px; }
     .container { padding-top: 40px; }
     .firus .texto-nosotros { font-size: 17px; }
@@ -89,7 +91,8 @@
     .container { padding-top: 30px; }
 }
 
-@media (max-width: 425px) {  
+@media (max-width: 425px) { 
+    main {height: 450px; width: auto;} 
     main .intro { width: 60%; font-size: 10px; } 
     .abrir-menu, .cerrar-menu { display: block; } 
     .abrir-menu { background-color: #1F2E53; border: none; margin-right: 20px; cursor: pointer; transition: all 0.3s; &:hover { transform: scale(1.1); } } 
@@ -108,13 +111,15 @@
     .descripciones .producto-imagen { margin-top: 15px; width: 220px;} }
 
 @media (max-width: 375px) {
+    main {height: 425px; width: auto;}
     .firus { height: auto; }
     .texto-nosotros { margin-top: 10px; }
     .descripciones .producto-imagen { width: 170px;height: 255px;}
 }
 
 @media (max-width: 320px) {
-    main .intro { font-size: 8px ; width: 65%;}
+    main {height: 400px;}
+    main .intro { font-size: 10px ; width: 65%;}
     footer .container1 .lista2 .enlaces { gap: 20px; padding: 12px; }
     footer .container1 .terminos { margin-top: 8px;}
     footer .container1 .terminos .copy { margin-left: 14px;}

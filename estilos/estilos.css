@@ -100,8 +100,8 @@ footer .container1 .iconitos .icoface, footer .container1 .iconitos .icoinsta, f
 }
 
 main {
-  height: 220vh;
-  width: 100%;
+  height: 1500px;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,6 +256,10 @@ main .intro {
   }
 }
 @media (max-width: 1024px) {
+  main {
+    height: 1250px;
+    width: auto;
+  }
   main .intro {
     font-size: 25px;
   }
@@ -362,6 +366,10 @@ main .intro {
   }
 }
 @media (max-width: 768px) {
+  main {
+    height: 1000px;
+    width: auto;
+  }
   .row {
     margin-left: 100px;
   }
@@ -513,6 +521,10 @@ main .intro {
   }
 }
 @media (max-width: 425px) {
+  main {
+    height: 450px;
+    width: auto;
+  }
   main .intro {
     width: 60%;
     font-size: 10px;
@@ -615,6 +627,10 @@ main .intro {
   }
 }
 @media (max-width: 375px) {
+  main {
+    height: 425px;
+    width: auto;
+  }
   .firus {
     height: auto;
   }
@@ -627,8 +643,11 @@ main .intro {
   }
 }
 @media (max-width: 320px) {
+  main {
+    height: 400px;
+  }
   main .intro {
-    font-size: 8px;
+    font-size: 10px;
     width: 65%;
   }
   footer .container1 .lista2 .enlaces {
