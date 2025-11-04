@@ -11,18 +11,17 @@ header {
   background-color: #1F2E53;
   height: 180px;
 }
-header nav li {
+header .nav-list li {
   list-style-type: none;
   display: inline-block;
   align-items: center;
   transition: all 0.3s;
 }
-header nav li:hover {
+header .nav-list li:hover {
   transform: scale(1.2);
 }
-header nav li a {
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
+header .nav-list li a {
+  text-decoration: none;
   text-shadow: 1.6px 1.6px 1.6px #202E53, 1.6px 1.6px 1.6px #94D4D6;
   color: #F4CF9F;
   font-family: sans-serif;
@@ -32,7 +31,7 @@ header nav li a {
   margin-right: 20px;
   transition: all 0.3s;
 }
-header nav li a:hover {
+header .nav-list li a:hover {
   color: white;
 }
 
@@ -63,9 +62,8 @@ footer .container1 .lista2 .enlaces {
   padding: 20px;
 }
 footer .container1 .lista2 .enlaces a {
-  color: salmon;
+  color: #F4CF9F;
   text-decoration: none;
-  list-style-type: none;
   font-family: sans-serif;
   font-size: 15px;
 }
@@ -76,7 +74,7 @@ footer .container1 .terminos {
 footer .container1 .terminos .copy {
   font-size: 10px;
   text-decoration: none;
-  color: salmon;
+  color: #F4CF9F;
   font-family: sans-serif;
   margin-left: 25px;
   margin-bottom: 5px;
@@ -87,7 +85,7 @@ footer .container1 .terminos .copy .copyright {
 footer .container1 .terminos .derechos {
   font-size: 10px;
   text-decoration: none;
-  color: salmon;
+  color: #F4CF9F;
   font-family: sans-serif;
   margin-right: 10px;
   margin-bottom: 5px;
@@ -133,7 +131,7 @@ main .intro {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/juan-silvia.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/juan-silvia.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -143,13 +141,15 @@ main .intro {
   width: 60%;
   height: 40%;
   font-family: sans-serif;
-  font-size: 30px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: bold;
   text-shadow: 1px 1px 1px #202E53, 1px 1px 1px #94D4D6;
   color: white;
 }
 .firus .texto-nosotros .nosotros {
+  font-size: 2.5rem;
+  font-weight: bold;
   margin-bottom: 30px;
 }
 .firus .texto-nosotros .nosotros-parrafo {
@@ -244,35 +244,20 @@ main .intro {
 
 @media (max-width: 1399px) {
   .producto-card {
-    height: 285vw;
+    height: auto;
   }
   .row {
     margin-left: 80px;
   }
-  main {
-    height: 180vh;
-  }
 }
 @media (max-width: 1200px) {
-  .producto-card {
-    height: 420vw;
-  }
   .row {
     margin-left: 140px;
   }
-  main {
-    height: 160vh;
-  }
 }
 @media (max-width: 1024px) {
-  main {
-    height: 150vh;
-  }
   main .intro {
     font-size: 25px;
-  }
-  .producto-card {
-    height: 440vw;
   }
   .firus .texto-nosotros {
     font-size: 25px;
@@ -282,9 +267,6 @@ main .intro {
   .firulais {
     width: 400px;
     height: 600px;
-  }
-  .descripciones {
-    height: 560vw;
   }
   .descripciones .explicacion {
     font-size: 25px;
@@ -305,9 +287,6 @@ main .intro {
   }
 }
 @media (max-width: 992px) {
-  .producto-card {
-    height: 525vw;
-  }
   .row {
     margin-left: 20px;
   }
@@ -373,9 +352,6 @@ main .intro {
     height: 60%;
     font-size: 15px;
   }
-  .descripciones {
-    height: 600vw;
-  }
   .explicacion {
     font-size: 20px;
     margin-top: 80px;
@@ -384,14 +360,8 @@ main .intro {
     margin-bottom: 20px;
     font-size: 30px;
   }
-  .producto-card {
-    height: 570vw;
-  }
 }
 @media (max-width: 768px) {
-  .producto-card {
-    height: 1300vw;
-  }
   .row {
     margin-left: 100px;
   }
@@ -404,9 +374,6 @@ main .intro {
   .firulais {
     width: 300px;
     height: 450px;
-  }
-  .descripciones {
-    height: 740vw;
   }
   .descripciones .explicacion {
     font-size: 18px;
@@ -463,12 +430,12 @@ main .intro {
     margin-top: 5px;
   }
   .copy {
-    font-size: 5px;
+    font-size: 10px;
     margin-left: 5px;
     margin-bottom: 3px;
   }
   .derechos {
-    font-size: 6px;
+    font-size: 8px;
     margin-left: 8px;
     margin-right: 10px;
   }
@@ -491,10 +458,6 @@ main .intro {
   }
   .descripciones {
     grid-template-columns: 1fr;
-    height: 1000vw;
-  }
-  .producto-card {
-    height: 1770vw;
   }
 }
 @media (max-width: 480px) {
@@ -535,14 +498,10 @@ main .intro {
   }
   .descripciones {
     grid-template-columns: 1fr;
-    height: 1420vw;
   }
   .primavera, .unica, .capas, .pie, .carrot, .torre, .choco, .red, .cheese, .tira {
     margin-bottom: 25px;
     font-size: 30px;
-  }
-  .producto-card {
-    height: 2150vw;
   }
   .row {
     padding-left: 0;
@@ -554,9 +513,6 @@ main .intro {
   }
 }
 @media (max-width: 425px) {
-  main {
-    height: 80vh;
-  }
   main .intro {
     width: 60%;
     font-size: 10px;
@@ -627,7 +583,7 @@ main .intro {
     margin-right: 1px;
   }
   .firus {
-    height: 125vw;
+    height: auto;
     flex-direction: column;
   }
   .firus .texto-nosotros {
@@ -649,9 +605,6 @@ main .intro {
     margin-bottom: 15px;
     margin-top: 10px;
   }
-  .descripciones {
-    height: 1782vw;
-  }
   .descripciones .explicacion {
     font-size: 20px;
     margin: 45px;
@@ -662,17 +615,11 @@ main .intro {
   }
 }
 @media (max-width: 375px) {
-  .producto-card {
-    height: 3050vw;
-  }
   .firus {
-    height: 160vw;
+    height: auto;
   }
   .texto-nosotros {
     margin-top: 10px;
-  }
-  .descripciones {
-    height: 1888vw;
   }
   .descripciones .producto-imagen {
     width: 170px;
@@ -680,9 +627,6 @@ main .intro {
   }
 }
 @media (max-width: 320px) {
-  main {
-    height: 70vh;
-  }
   main .intro {
     font-size: 8px;
     width: 65%;
@@ -697,13 +641,7 @@ main .intro {
   footer .container1 .terminos .copy {
     margin-left: 14px;
   }
-  .producto-card {
-    height: 3050vw;
-  }
   .firus {
-    height: 190vw;
-  }
-  .descripciones {
-    height: 2400vw;
+    height: auto;
   }
 }/*# sourceMappingURL=estilos.css.map */
